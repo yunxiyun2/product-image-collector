@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "policy": "模板种子，不是白名单；观察日期未知，使用前核对当前目标标题和范围；新网站允许通过真实DOM定位",
+  "sites": [
+    {"domain": "9k9k.com", "target_types": ["game", "app"], "selectors": [".screenshot_small"]},
+    {"domain": "87g.com", "target_types": ["game", "app"], "selectors": [".hf-ban2"]},
+    {"domain": "7po.com", "target_types": ["game"], "selectors": [".hklGdSwBox", "#swDetailCount"]},
+    {"domain": "youxiguancha.com", "target_types": ["game"], "selectors": [".detaiSwiperBox", "#swDetailCount"]},
+    {"domain": "52pk.com", "target_types": ["game"], "selectors": [".loadimg"]},
+    {"domain": "3dmgame.com", "target_types": ["game"], "selectors": [".pic-c", ".snapShotCont", "#snapShotWrap"]},
+    {"domain": "6ll.com", "target_types": ["game", "app"], "selectors": [".m-jietu", "#showcase"]},
+    {"domain": "hncj.com", "target_types": ["game", "app"], "selectors": [".m-jietu", "#showcase"]},
+    {"domain": "bufan.com", "target_types": ["game", "app"], "selectors": [".hideImg"]},
+    {"domain": "goapk.com", "target_types": ["game", "app"], "selectors": ["#imgview"]},
+    {"domain": "pc6.com", "target_types": ["game", "app"], "selectors": []},
+    {"domain": "danji100.com", "target_types": ["game", "app"], "selectors": []},
+    {"domain": "sj.qq.com", "target_types": ["game", "app"], "selectors": [], "rule": "仅确认后的appdetail目标轮播；图片ma_pic2且alt与目标对应，不能只按图片域名全页提取"},
+    {"domain": "apps.apple.com", "target_types": ["game", "app"], "selectors": [], "rule": "确认详情页trackId，同trackId公开手机截图字段；不猜trackId"}
+  ],
+  "non_domain_templates": [
+    {"site_label": "毛戈平官网历史模板", "target_types": ["product"], "selectors": [".proSPicSwiper li[data-img]"], "image_attribute": "data-img", "rule": "域名必须真实搜索确认，精确目标或SKU对应，不仅凭选择器认定官方"}
+  ]
+}

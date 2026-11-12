@@ -1,0 +1,2 @@
+vendor/*.zip filter=lfs diff=lfs merge=lfs -text
+vendor/wheels/*.whl filter=lfs diff=lfs merge=lfs -text

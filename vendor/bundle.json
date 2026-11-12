@@ -1,0 +1,13 @@
+{
+  "browser_version": "145.0.7632.6",
+  "playwright_version": "1.58.0",
+  "archive": "vendor/chrome-linux64.zip",
+  "executable": "chrome-linux64/chrome",
+  "files": [
+    {"path": "vendor/chrome-linux64.zip", "sha256": "b5e3195041af345a668d110f5daf5581961fa3608626ea588c97dd0fe81c4e38", "bytes": 175440843},
+    {"path": "vendor/wheels/greenlet-3.2.5-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", "sha256": "cc1d01bdd67db3e5711e6246e451d7a0f75fae7bbf40adde129296a7f9aa7cc9", "bytes": 639841},
+    {"path": "vendor/wheels/playwright-1.58.0-py3-none-manylinux1_x86_64.whl", "sha256": "c95568ba1eda83812598c1dc9be60b4406dffd60b149bc1536180ad108723d6b", "bytes": 46235268},
+    {"path": "vendor/wheels/pyee-13.0.1-py3-none-any.whl", "sha256": "af2f8fede4171ef667dfded53f96e2ed0d6e6bd7ee3bb46437f77e3b57689228", "bytes": 15659},
+    {"path": "vendor/wheels/typing_extensions-4.16.0-py3-none-any.whl", "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8", "bytes": 45571}
+  ]
+}
