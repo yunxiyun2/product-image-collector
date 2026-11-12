@@ -57,7 +57,9 @@ python3 "<skill>/scripts/browser.py" --runtime "<同一运行目录>" --input "<
 }
 ```
 
-本Skill包含浏览器压缩包和Python轮包，不依赖其他Skill/CLI/MCP。setup仅本地离线安装和解压；不能关闭sandbox或使用snap占位程序。browser每次在临时上下文打开url并执行actions，结束即关闭，无session管理。actions最多20项，支持click/fill/scroll/wait，不接受任意JS。
+浏览器以vendor/chrome-linux64.zip.part001至part003三个普通Git分卷发布，Python轮包也是普通Git文件，无需Git LFS。setup逐卷校验大小和SHA，按bundle.json顺序合并到runtime目录，再验证原始175440843字节ZIP的SHA并解压；不要手动改文件名或只上传部分卷。本地保留的完整chrome-linux64.zip不参与发布。
+
+setup仅本地离线准备，不关闭sandbox或使用snap占位程序。browser每次在临时上下文打开url并执行actions，结束即关闭。actions最多20项，支持click/fill/scroll/wait，不接受任意JS。
 
 未提供scope_selector返回页面title/url及无障碍快照；提供后返回目标范围html_file，里面由脚本记录实际currentSrc和背景图。record-source还需要页面真实page_name；若区域HTML没有标题，拼接实际读取的标题证据，不编造名字。输出evidence路径放当前产品目录内，再用相对路径记录。
 

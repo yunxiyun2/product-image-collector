@@ -5,3 +5,4 @@ __pycache__/
 .DS_Store
 runtime/
 workspace/
+vendor/chrome-linux64.zip
